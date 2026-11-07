@@ -1,0 +1,26 @@
+Labwork 1 report:
+Name: Nguyen Minh Hoang 2640008
+
+1. Objective:
+The goal of this Labwork is to install MySQL and clone the repo test_db
+from github, then import the database, and verify it.
+
+2. Execution
+
+Task 1: Clone the repo
+- Command: 
+git clone https://github.com/datacharmer/test_db
+cd test_db
+
+Task 2: Import Dataset into MySQL
+- Command:
+mysql -u root -p --commands < employees.sql
+
+Task 3: Verify database
+- Command:
+mysql -u root -p --commands -t < test_employees_sha2.sql
+
+3. Conclusion
+All 6 tablews (employees, departments, dept_manager, dept_emp, 
+titles, salaries) were successfully installed and verified 
+with matching checksums (OK status).
